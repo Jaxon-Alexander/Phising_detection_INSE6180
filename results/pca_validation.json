@@ -1,0 +1,194 @@
+{
+  "dataset_sha256": "052df52c43ce9900cc78f76d54e0e0296697b2c9c57f3ac0fcfa2990852467a9",
+  "partition": "development_validation",
+  "split_seed": 42,
+  "train_rows": 6400,
+  "validation_rows": 1600,
+  "original_features": 48,
+  "variance_target": 0.95,
+  "numpy_version": "2.3.5",
+  "models": {
+    "knn": {
+      "parameters": {
+        "k": 5
+      },
+      "standardized": true,
+      "components": 34,
+      "variance_retained": 0.9516812025461542,
+      "baseline": {
+        "accuracy": 0.95,
+        "precision": 0.9466501240694789,
+        "recall": 0.95375,
+        "f1": 0.950186799501868,
+        "roc_auc": 0.980678125,
+        "confusion_matrix": [
+          [
+            757,
+            43
+          ],
+          [
+            37,
+            763
+          ]
+        ]
+      },
+      "pca": {
+        "accuracy": 0.945,
+        "precision": 0.9483627204030227,
+        "recall": 0.94125,
+        "f1": 0.944792973651192,
+        "roc_auc": 0.97831171875,
+        "confusion_matrix": [
+          [
+            759,
+            41
+          ],
+          [
+            47,
+            753
+          ]
+        ]
+      },
+      "f1_delta": -0.005393825850676048,
+      "missed_phishing_delta": 10
+    },
+    "logistic_regression": {
+      "parameters": {
+        "learning_rate": 0.05,
+        "iterations": 1500,
+        "l2": 0.001
+      },
+      "standardized": true,
+      "components": 34,
+      "variance_retained": 0.9516812025461542,
+      "baseline": {
+        "accuracy": 0.936875,
+        "precision": 0.9215922798552473,
+        "recall": 0.955,
+        "f1": 0.937998772252916,
+        "roc_auc": 0.979103125,
+        "confusion_matrix": [
+          [
+            735,
+            65
+          ],
+          [
+            36,
+            764
+          ]
+        ]
+      },
+      "pca": {
+        "accuracy": 0.928125,
+        "precision": 0.9181929181929182,
+        "recall": 0.94,
+        "f1": 0.9289684990735022,
+        "roc_auc": 0.9744546875,
+        "confusion_matrix": [
+          [
+            733,
+            67
+          ],
+          [
+            48,
+            752
+          ]
+        ]
+      },
+      "f1_delta": -0.00903027317941374,
+      "missed_phishing_delta": 12
+    },
+    "decision_tree": {
+      "parameters": {
+        "max_depth": 16,
+        "min_leaf": 2
+      },
+      "standardized": false,
+      "components": 3,
+      "variance_retained": 0.9714544994449085,
+      "baseline": {
+        "accuracy": 0.97,
+        "precision": 0.966501240694789,
+        "recall": 0.97375,
+        "f1": 0.9701120797011208,
+        "roc_auc": 0.9775390625,
+        "confusion_matrix": [
+          [
+            773,
+            27
+          ],
+          [
+            21,
+            779
+          ]
+        ]
+      },
+      "pca": {
+        "accuracy": 0.690625,
+        "precision": 0.6666666666666666,
+        "recall": 0.7625,
+        "f1": 0.7113702623906706,
+        "roc_auc": 0.7338890625,
+        "confusion_matrix": [
+          [
+            495,
+            305
+          ],
+          [
+            190,
+            610
+          ]
+        ]
+      },
+      "f1_delta": -0.2587418173104502,
+      "missed_phishing_delta": 169
+    },
+    "random_forest": {
+      "parameters": {
+        "n_trees": 51,
+        "max_depth": 16,
+        "min_leaf": 2,
+        "seed": 42
+      },
+      "standardized": false,
+      "components": 3,
+      "variance_retained": 0.9714544994449085,
+      "baseline": {
+        "accuracy": 0.978125,
+        "precision": 0.9739776951672863,
+        "recall": 0.9825,
+        "f1": 0.9782202862476664,
+        "roc_auc": 0.997215625,
+        "confusion_matrix": [
+          [
+            779,
+            21
+          ],
+          [
+            14,
+            786
+          ]
+        ]
+      },
+      "pca": {
+        "accuracy": 0.726875,
+        "precision": 0.6880829015544041,
+        "recall": 0.83,
+        "f1": 0.7524079320113315,
+        "roc_auc": 0.77996640625,
+        "confusion_matrix": [
+          [
+            499,
+            301
+          ],
+          [
+            136,
+            664
+          ]
+        ]
+      },
+      "f1_delta": -0.22581235423633494,
+      "missed_phishing_delta": 122
+    }
+  }
+}
